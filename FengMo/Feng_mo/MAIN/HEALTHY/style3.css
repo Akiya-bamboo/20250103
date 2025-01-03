@@ -1,0 +1,280 @@
+*{
+    position: relative;
+    
+}
+
+body{
+    background-color: rgb(21, 51, 90);
+
+}
+.main{
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    padding: 25px;
+    box-shadow:5px 8px 10px -10px rgb(47, 48, 48) ;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    color: #15648e;
+
+}
+h4{
+    text-align: justify;
+    left: 20px;
+    top: -8px;
+    color:  #15648e;
+}
+
+.date{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(109, 156, 200);
+    border-radius: 50px;
+    left: 170px;
+    color: #ffffff;
+}
+
+.square{
+    position: absolute;
+    left: 125px;
+    bottom: 270px;
+    background-color: rgb(207, 221, 238);
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    top: 120px;
+}
+.square2{
+    position: absolute;
+    left: 125px;
+    bottom: 20px;
+    background-color:rgb(207, 221, 238);
+    width: 300px;
+    height: 230px;
+    border-radius: 30px;
+    top: 200px;
+}
+
+.date2{
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    top: 330px;
+    left: 170px;
+    background-color: rgb(109, 156, 200);
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+.sleep-quality {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sleep-chart {
+    margin: -10px 0;
+}
+
+.sleep-bar {
+    margin: 8px 0;
+}
+
+.bar-label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color:  #15648e;
+}
+
+.bar-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.bar-fill {
+    background: #15648e;
+    color: white;
+    padding: 8px;
+    text-align: right;
+    font-size: 0.8em;
+    transition: width 0.3s ease;
+    animation: progressAnimation 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* 進度條動畫 */
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 為每個進度條設置不同的延遲時間 */
+.sleep-bar:nth-child(1) .bar-fill {
+    animation-delay: 0.2s;
+}
+
+.sleep-bar:nth-child(2) .bar-fill {
+    animation-delay: 0.4s;
+}
+
+.sleep-bar:nth-child(3) .bar-fill {
+    animation-delay: 0.6s;
+}
+
+/* 調整進度條顏色 */
+.sleep-bar:nth-child(1) .bar-fill {
+    background: #15648e;  /* 深度睡眠 */
+}
+
+.sleep-bar:nth-child(2) .bar-fill {
+    background: #3498db;  /* 淺度睡眠 */
+}
+
+.sleep-bar:nth-child(3) .bar-fill {
+    background: #2980b9;  /* 清醒時間 */
+}
+
+.sleep-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item i {
+    color: #f1c40f;
+}
+
+.step-simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+    color: #15648e;
+    top: -55px;
+}
+.step-count {
+    font-weight: bold;
+    text-align: center;
+    left: 20px;
+}
+
+.step-label {
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+/* 進度條容器 */
+.progress-bar {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+/* 進度條 */
+.progress {
+    height: 100%;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    animation: progressAnimation 1.5s ease-out;
+    transition: width 1.5s ease-out;
+}
+
+/* 不同類型的進度條顏色 */
+.deep-sleep {
+    background-color: #15648e;
+}
+
+.light-sleep {
+    background-color: #3498db;
+}
+
+.awake {
+    background-color: #2980b9;
+}
+
+/* 睡眠統計容器 */
+.sleep-stats {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.sleep-item {
+    margin-bottom: 15px;
+}
+
+.sleep-label {
+    color: #15648e;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 返回按鈕樣式 */
+.back-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: rgb(64, 122, 177);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.back-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.back-btn:hover {
+    transform: translateX(-50%) scale(1.1);
+    background-color:#15648e;
+}
+
+.step-icon{
+    left: 85px;
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,84 @@
+*{
+    position: relative;
+    
+}
+
+body{
+    background-color: rgb(21, 51, 90);
+
+}
+.main{
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    padding: 25px;
+    box-shadow:5px 8px 10px -10px rgb(47, 48, 48) ;
+    border-radius: 50%;
+    background-color: rgb(190, 218, 228);
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    color: #15648e;
+}
+
+.circle{
+    position: absolute;
+    top: 170px;
+    left: 160px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #4184a9;
+}
+
+.circle img{
+    width: 360px;
+    height: 510px;
+    bottom: 140px;
+    right: 70px;
+}
+
+/* 返回按鈕樣式 */
+.back-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: rgb(64, 122, 177);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.back-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.back-btn:hover {
+    transform: translateX(-50%) scale(1.1);
+    background-color:#15648e;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.wave-imge{
+    animation: wave 2s infinite ease-in-out;
+}
+

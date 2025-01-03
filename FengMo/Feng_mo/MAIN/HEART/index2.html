@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>輔具期末-心率</title>
+</head>
+<body>
+    <div class="main">
+        <h3>10:30</h3>
+        <!-- 原有的心率顯示區域 -->
+        <div class="heart-rate-container">
+            <div class="heart-icon"><img src="./img/heartt.png" alt=""></div>
+            <div class="heart-rate-display">
+                <span class="bpm-number">75</span>
+                <span class="bpm-text">BPM</span>
+            </div>
+            <div class="heart-rate-graph">
+                <div class="pulse-line"></div>
+            </div>
+        </div>
+        
+        <!-- 新增三個圓形顯示區域 -->
+        <div class="circles-container">
+            <div class="circle small">
+                <div class="circle-content">
+                    <div class="value">80</div>
+                    <div class="label">平均心率</div>
+                    <div class="bpm-info">每分鐘</div>
+                </div>
+            </div>
+            <div class="circle large">
+                <div class="circle-content">
+                    <div class="value">75</div>
+                    <div class="label">正常</div>
+                    <div class="bpm-info">每分鐘</div>
+                </div>
+            </div>
+            <div class="circle small2">
+                <div class="circle-content">
+                    <div class="value">130</div>
+                    <div class="label">最大心率</div>
+                    <div class="bpm-info">每分鐘</div>
+                </div>
+            </div>
+        </div>
+        <a href="../index.html" class="back-btn">
+            <img src="./img/back.png" alt="返回">
+        </a>
+    </div>
+</body>
+</html>

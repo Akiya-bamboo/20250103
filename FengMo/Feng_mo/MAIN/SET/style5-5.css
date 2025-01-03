@@ -1,0 +1,130 @@
+*{
+    position: relative;
+    
+}
+
+body{
+    background-color: rgb(21, 51, 90);
+
+}
+.main{
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    padding: 25px;
+    box-shadow:5px 8px 10px -10px rgb(47, 48, 48) ;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 2px 2px 2px 2px;
+    background-color: #34789d;
+    height: 45px;
+    width: 140px;
+    left: 180px;
+    border-radius: 30px;
+}
+h3{
+    text-align: center;
+    color: #ffffff;
+    bottom: 8px;
+}
+
+.BIG{
+    display: flex;
+    justify-content: center;
+}
+
+.Numb1{
+    margin: 0px 20px;
+}
+
+.Numb1 .numb{
+    text-align: center;
+    font-size: 20px;
+    padding: 2px 2px 2px 2px;
+    height: 25px;
+    width: 100px;
+    border-radius: 30px;
+    color: #34789d;
+}
+
+.Numb1 .numb2{
+    text-align: center;
+    font-size: 25px;
+    background-color: #c6deeb;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.Down{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.Numb2{
+    margin: 2px 30px;
+}
+
+.Numb2 .num{
+    text-align: left;
+    font-size: 20px;
+    height: 25px;
+    width: 100px;
+    border-radius: 30px;
+    color: #34789d;
+
+}
+
+.Numb2 .num2{
+    text-align: left;
+    font-size: 18px;
+    height: 35px;
+    width: 320px;
+    border-radius: 30px;
+    background-color: #c6deeb;
+
+}
+
+.Numb2 p{
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* 返回按鈕樣式 */
+.back-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: rgb(64, 122, 177);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.back-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.back-btn:hover {
+    transform: translateX(-50%) scale(1.1);
+    background-color:#15648e;
+}
+
+.step-icon{
+    width: 25px;
+    height: 25px;
+}

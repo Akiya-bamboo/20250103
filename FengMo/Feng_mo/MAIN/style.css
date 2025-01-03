@@ -1,0 +1,149 @@
+*{
+    position: relative;
+    
+}
+
+body{
+    background-color: rgb(21, 51, 90);
+
+}
+.main{
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    padding: 25px;
+    box-shadow:5px 8px 10px -10px rgb(47, 48, 48) ;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+h1{
+    margin: 150px 150px 0  150px;
+    text-align: center;
+    font-size: 70px;
+    color: #15648e;
+}
+h2{
+    margin: 150px auto;
+    text-align: center;
+    font-size: 10px;
+    color: #15648e;
+}
+h3{
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-size: 20px;
+    color: #15648e;
+}
+
+.button{
+    position: absolute;
+    right: 70px;
+    bottom: 250px;
+    height: 80px;
+    width: 80px;
+    margin: 100px auto;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: rgb(72, 140, 203);
+}
+
+.icon-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.icon-btn img{
+    width: 65px;
+    height: 65px;
+
+}
+
+.icon-btn {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgb(72, 140, 203);
+}
+
+#icon1 img{
+    width: 80px;
+    height: 80px;
+    right: 4px;
+
+}
+
+#icon4 img{
+    width: 80px;
+    height: 70px;
+    right: 2px;
+
+}
+
+#icon3 img{
+    width: 80px;
+    height: 85px;
+    right: 1px;
+
+}
+
+.icon-btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: rgb(64, 122, 177);
+}
+
+/* 定位每個圖標 */
+#icon1 { 
+    top: 8%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+#icon4 { 
+    bottom: 8%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* 修改 hover 效果 */
+.icon-btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: rgb(64, 122, 177);
+}
+
+/* 為左右側的圖標添加縮放效果 */
+#icon2:hover, #icon3:hover, #icon5:hover, #icon6:hover {
+    transform: scale(1.1);
+}
+
+/* 為上下的圖標添加特殊的 hover 效果 */
+#icon1:hover, #icon4:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+/* 定位每個圖標 */
+#icon2 { top: 25%; right: 10%; }                              /* 右上方 */
+#icon3 { top: 55%; right: 10%; }                             /* 右下方 */
+#icon5 { top: 55%; left: 10%; }                              /* 左下方 */
+#icon6 { top: 25%; left: 10%; }                              /* 左上方 */
+
+.time-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
